@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar bg-primary text-white">
+    <div class="navbar bg-warning text-white">
         <div class="flex-1">
           <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
         </div>
         <div class="flex-none gap-2">
-          
+          <div id="btnDiv"></div>
           <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
                 <img
+                  id="profile-img"
                   alt="Tailwind CSS Navbar component"
                   src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
               </div>
@@ -29,16 +31,79 @@
                   Profile
                 </a>
               </li>
-              <li id="Logout"><a>Logout</a></li>
+              <li><button id="Logout">Logout</button></li>
+              <li>
+                <a class="justify-between" href="./postAd.html">postAd</a>
+              </li>
             </ul>
+              
           </div>
         </div>
       </div>
-    
+      
 
 
 
-    <script type="module" src="./script/app.js"></script>
+      <main>
+
+        <div class="flex justify-center mt-[3rem] ">
+        <label class="input flex input-bordered w-[40rem] bg-white items-center gap-2">
+  <input type="text" class="grow" placeholder="Search" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    fill="currentColor text-black"
+    class="h-4 w-4 text- opacity-70">
+    <path
+      fill-rule="evenodd"
+      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+      clip-rule="evenodd" />
+  </svg>
+</label>
+        </div>
+
+
+<div class="flex flex-wrap justify-center">
+        <div class="card bg-white w-96 mt-[3rem] m-[8rem] shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class=" text-black">Shoes!</h2>
+            <p class="text-black">If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-white w-96 h-85 mt-[3rem] m-[8rem] shadow-xl">
+          <figure>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/008/530/101/original/sport-t-shirt-cutout-file-png.png"
+              alt="SHirt" />
+          </figure>
+          <div class="card-body">
+            <h2 class=" text-black">Drop Shoulder T-Shirt!</h2>
+            <p class="text-black">On Trending</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      </main>
+
+      <div id="cont"></div>
+
+
+
+    <script type="module" src="app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

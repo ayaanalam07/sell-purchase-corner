@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Ad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  
+
+</head>
+<body>
+    
+    <div class="navbar bg-warning text-white">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="./index.html">Buy / Sells Corner</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div id="btnDiv"></div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  id="profile-img"
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+              <li >
+                <a class="justify-between">
+                  Profile
+                </a>
+              </li>
+              <li><button id="Logout">Logout</button></li>
+              <li>
+                <a class="justify-between" href="./postAd.html">postAd</a>
+              </li>
+            </ul>
+                      </div>
+        </div>
+      </div>
+      
+
+
+
+      <form id="form">
+  
+        <div class="post-ad">
+          <input class="fileInp" type="file" id="inputFile">
+          <label for="inputFile">+</label>
+          <h4 class="heading-img-upload">Upload Product Photo</h4> 
+        </div>
+      
+        <div class="text-post-add">
+         <input minlength="6" maxlength="15" class="product-title" type="text" id="product-title" placeholder="Product Title">
+         <input minlength="10" maxlength="20" class="product-description" type="text" id="product-description" placeholder="PD    Product Description" >
+         <input  class="rs-price" type="number" id="product-price" placeholder="RS    Enter Price">
+         <input class="post-name" type="text" id="product-name" placeholder="Enter Your Name">
+         <input minlength="11" maxlength="11" class="post-number" type="number" id="product-number" placeholder="Enter Your Number">
+         <button class="Post-now-btn">Post Now</button>
+      
+       </div>
+      </form>
+
+      <div id="cont"></div>
+
+
+
+
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script type="module" src="postAd.js"></script>
+
+</body>
+</html>
